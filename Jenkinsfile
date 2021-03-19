@@ -1,10 +1,10 @@
 pipeline {
-environment {
-    registry = “acchavez89/devops_project1”
-    registryCredential = ‘dockerhub_id’
-    dockerImage = ‘mypractice’
-  }
-  agent {Dockerfile true}
+//environment {
+  //  registry = “acchavez89/devops_project1”
+  //  registryCredential = ‘dockerhub_id’
+  //  dockerImage = ‘mypractice’
+ // }
+  agent {dockerfile true}
   stages {
     stage('Cloning Git') {
       steps {
