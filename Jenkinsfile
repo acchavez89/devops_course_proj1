@@ -1,12 +1,12 @@
 pipeline {
-/*environment {
+environment {
     registry = “acchavez89/devops_project1”
     registryCredential = ‘dockerhub_id’
-    dockerImage = ‘mypractice’
-  } */
-  agent {dockerfile true}
+    dockerImage = ‘latest’
+  } 
+  agent any 
   stages {
-  /* stage('Cloning Git') {
+   stage('Cloning Git') {
       steps {
         git([url: 'https://github.com/acchavez89/devops_course_proj1.git', branch: 'main', credentialsId: 'GitHubCredentials2'])
       }
@@ -18,7 +18,7 @@ pipeline {
           dockerImage = docker.build mypractice
         }
       }
-    }*/
+    }
 
     stage('Deploy Image') {
       steps{
