@@ -1,0 +1,4 @@
+FROM python:3.7-alpine
+
+CMD [ "python", "-c", "print('hi this is my first practice of jenkins-docker-git pipeline')"]
+
