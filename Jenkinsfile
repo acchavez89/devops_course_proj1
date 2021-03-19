@@ -4,7 +4,7 @@ environment {
     registryCredential = ‘dockerhub_id’
     dockerImage = ‘mypractice’
   }
-  agent any
+  agent {Dockerfile true}
   stages {
     stage('Cloning Git') {
       steps {
