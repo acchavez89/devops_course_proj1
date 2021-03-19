@@ -23,8 +23,7 @@ environment {
     stage('Deploy Image') {
       steps{
         script {
-          docker.withRegistry( 'https://hub.docker.com/repository/docker/acchavez89/devops_project1', registryCredential ) {
-            dockerImage.push("$BUILD_NUMBER")
+          docker.withRegistry( '', registryCredential ) {
              dockerImage.push()
           }
         }
