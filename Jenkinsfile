@@ -1,8 +1,8 @@
 pipeline {
 environment {
     registry = 'acchavez89/devops_project1'
-    registryCredential = ‘dockerhub_id’
-    dockerImage = ‘latest’
+    registryCredential = ‘dockerhub’
+    dockerImage = ‘’
   } 
   agent any 
   stages {
