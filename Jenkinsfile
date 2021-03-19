@@ -8,7 +8,7 @@ environment {
   stages {
    stage('Cloning Git') {
       steps {
-        git 'https://github.com/acchavez89/devops_course_proj1.git'
+        git([url:  'https://github.com/acchavez89/devops_course_proj1.git', branch: 'main', credentialsId: 'GitHubCredentials2'])
       }
     }
 
